@@ -14,3 +14,6 @@
  '(tool-bar-mode nil)
  '(tooltip-mode nil)
  '(menu-bar-mode nil))
+
+(setq default-frame-alist
+      '((left . 1200) (top . 200) (height . 60) (width . 100) ))
