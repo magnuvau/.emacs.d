@@ -9,3 +9,8 @@
 
 (load-theme 'solarized-dark t)
 
+(custom-set-variables
+ '(scroll-bar-mode nil)
+ '(tool-bar-mode nil)
+ '(tooltip-mode nil)
+ '(menu-bar-mode nil))
