@@ -17,3 +17,5 @@
 
 (setq default-frame-alist
       '((left . 1200) (top . 200) (height . 60) (width . 100) ))
+
+(setq-default tab-width 4)
