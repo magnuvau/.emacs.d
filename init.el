@@ -9,13 +9,26 @@
 
 (load-theme 'solarized-dark t)
 
+(global-display-line-numbers-mode)
+
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(menu-bar-mode nil)
+ '(package-selected-packages '(csharp-mode solarized-theme))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
- '(tooltip-mode nil)
- '(menu-bar-mode nil))
+ '(tooltip-mode nil))
 
 (setq default-frame-alist
       '((left . 1200) (top . 200) (height . 60) (width . 100) ))
 
 (setq-default tab-width 4)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
