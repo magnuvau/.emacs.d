@@ -1,4 +1,6 @@
-;; Requirements: 'M-x package-install solarized-theme'
+;; Requirements:
+;; 'M-x package-refresh-contents'
+;; 'M-x package-install solarized-theme'
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
