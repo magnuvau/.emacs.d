@@ -41,3 +41,7 @@
   (delete-other-windows))
 
 (global-set-key (kbd "C-x K") 'nuke-all-buffers)
+
+;disable backup and auto-save
+(setq backup-inhibited t)
+(setq auto-save-default nil)
