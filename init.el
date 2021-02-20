@@ -2,6 +2,7 @@
 ;; 'M-x package-refresh-contents'
 ;; 'M-x package-install solarized-theme'
 ;; 'M-x package-install dockerfile-mode'
+;; 'M-x package-install docker-compose-mode'
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -10,6 +11,8 @@
 
 (require 'dockerfile-mode)
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
+(require 'docker-compose-mode)
 
 (global-display-line-numbers-mode)
 
