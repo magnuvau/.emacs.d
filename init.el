@@ -45,6 +45,10 @@
 
 (global-set-key (kbd "C-x K") 'nuke-all-buffers)
 
-;disable backup and auto-save
+; disable backup and auto-save
 (setq backup-inhibited t)
 (setq auto-save-default nil)
+
+; word wrap
+(global-visual-line-mode t)
+
