@@ -8,7 +8,7 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
-(load-theme 'solarized-dark t)
+(load-theme 'twilight t)
 
 (require 'dockerfile-mode)
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
@@ -56,3 +56,16 @@
 
 ; word wrap
 (global-visual-line-mode t)
+
+; hide welcome screen
+(setq inhibit-startup-screen t)
+
+; use UTF-8 encoding
+(define-coding-system-alias 'UTF-8 'utf-8)
+
+; LF line endings
+(setq-default buffer-file-coding-system 'utf-8-unix)
+
+; font size
+(set-face-attribute 'default nil :height 200)
+
