@@ -69,3 +69,7 @@
 ; font size
 (set-face-attribute 'default nil :height 200)
 
+; line limit ruler
+(setq-default display-fill-column-indicator-column 120)
+(add-hook 'go-mode-hook #'display-fill-column-indicator-mode)
+
