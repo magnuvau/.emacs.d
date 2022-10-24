@@ -1,6 +1,6 @@
 ;; Requirements:
 ;; 'M-x package-refresh-contents'
-;; 'M-x package-install solarized-theme'
+;; 'M-x package-install twilight-theme'
 ;; 'M-x package-install dockerfile-mode'
 ;; 'M-x package-install docker-compose-mode'
 ;; 'M-x package-install go-complete'
