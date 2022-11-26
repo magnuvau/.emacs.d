@@ -27,7 +27,8 @@
  '(inhibit-startup-screen nil)
  '(initial-scratch-message nil)
  '(menu-bar-mode nil)
- '(package-selected-packages '(dockerfile-mode csharp-mode solarized-theme))
+ '(package-selected-packages
+   '(typescript-mode dockerfile-mode csharp-mode solarized-theme))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
