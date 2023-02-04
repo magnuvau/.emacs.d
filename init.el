@@ -1,13 +1,18 @@
-;; Requirements:
-;; 'M-x package-refresh-contents'
-;; 'M-x package-install twilight-theme'
-;; 'M-x package-install dockerfile-mode'
-;; 'M-x package-install docker-compose-mode'
-;; 'M-x package-install go-complete'
-
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+(setq package-list
+	  '(twilight-theme dockerfile-mode docker-compose-mode go-complete plantuml-mode typescript-mode))
+
 (package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
 (load-theme 'twilight t)
 
 (require 'dockerfile-mode)
@@ -16,6 +21,7 @@
 (require 'docker-compose-mode)
 
 (require 'go-mode)
+(require 'plantuml-mode)
 
 (global-display-line-numbers-mode)
 
@@ -28,7 +34,7 @@
  '(initial-scratch-message nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(typescript-mode dockerfile-mode csharp-mode solarized-theme))
+   '(plantuml-mode typescript-mode dockerfile-mode csharp-mode solarized-theme))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
