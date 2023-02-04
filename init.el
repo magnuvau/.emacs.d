@@ -80,3 +80,10 @@
 (setq-default display-fill-column-indicator-column 120)
 (add-hook 'go-mode-hook #'display-fill-column-indicator-mode)
 
+; nuke all buffers
+(defun nuke-all-buffers ()
+  (interactive)
+  (mapcar 'kill-buffer (buffer-list))
+  (delete-other-windows))
+(global-set-key (kbd "C-x K") 'nuke-all-buffers)
+
