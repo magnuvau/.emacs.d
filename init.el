@@ -2,7 +2,7 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (setq package-list
-	  '(twilight-theme dockerfile-mode docker-compose-mode go-complete plantuml-mode typescript-mode))
+	  '(twilight-theme dockerfile-mode docker-compose-mode go-complete plantuml-mode typescript-mode web-mode))
 
 (package-initialize)
 
@@ -34,7 +34,7 @@
  '(initial-scratch-message nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(plantuml-mode typescript-mode dockerfile-mode csharp-mode solarized-theme))
+   '(web-mode plantuml-mode typescript-mode dockerfile-mode csharp-mode solarized-theme))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
