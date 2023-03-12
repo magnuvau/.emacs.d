@@ -42,7 +42,7 @@
 (setq default-frame-alist
       '((left . 1200) (top . 200) (height . 60) (width . 100) ))
 
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
