@@ -87,3 +87,6 @@
   (delete-other-windows))
 (global-set-key (kbd "C-x K") 'nuke-all-buffers)
 
+; auto update all buffers
+(global-auto-revert-mode t)
+
